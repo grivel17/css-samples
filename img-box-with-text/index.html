@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMG BOX WITH <TEXTarea></TEXTarea></title>
+<style>
+
+
+
+.box-img {
+    width: 25vw;
+    height: 25vw;
+    background-image: url('green-square.jpg');
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+/* :after {
+    content: "\e068";
+    &#8594;
+  */
+
+
+
+.box-img-title {
+    color:whitesmoke;
+    font-size: 300%;
+  
+}
+
+.box-text {
+    width: 25vw;
+    height: 0;
+    text-align: center;
+    margin-top: 30px;   
+    opacity: 0;
+    transition: all 1s linear;
+    
+   
+}
+
+.box-img:hover + .box-text {
+    opacity: 1;
+    height: fit-content;    
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+    <div class="box-img">
+        <div class="box-img-title">01</div>
+    </div>
+    <div class="box-text">
+
+        lorem lore lorem  lorem lore lorem  lorem lore lorem  lorem lore lorem  lorem lore lorem 
+
+    </div>
+
+    
+
+
+</body>
+</html>
+
+<!-- <img width="400" height="400" src="http://ins.stronazen.pl/jb/wp-content/uploads/2020/10/teemu-paananen-OOE4xAnBhKo-unsplash-scaled-e1604050557555-everglow.jpg" class="attachment-full size-full" alt="" loading="lazy" srcset="http://ins.stronazen.pl/jb/wp-content/uploads/2020/10/teemu-paananen-OOE4xAnBhKo-unsplash-scaled-e1604050557555-everglow.jpg 400w, http://ins.stronazen.pl/jb/wp-content/uploads/2020/10/teemu-paananen-OOE4xAnBhKo-unsplash-scaled-e1604050557555-everglow-300x300.jpg 300w, http://ins.stronazen.pl/jb/wp-content/uploads/2020/10/teemu-paananen-OOE4xAnBhKo-unsplash-scaled-e1604050557555-everglow-150x150.jpg 150w, http://ins.stronazen.pl/jb/wp-content/uploads/2020/10/teemu-paananen-OOE4xAnBhKo-unsplash-scaled-e1604050557555-everglow-100x100.jpg 100w" sizes="(max-width: 400px) 100vw, 400px"> -->

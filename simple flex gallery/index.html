@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Flex Gallery </title>
+<style>
+    h1 {
+        font-size: 3rem;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+       text-align: center;
+    }
+
+    .conteiner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    .img {
+        width: 40vw;
+        height: 30vw;
+        background-color: cadetblue;
+        margin: 20px;
+        transition: all 1s linear;
+    }
+
+    .img:hover {
+        transform:scale(1.1);
+        background-color: rgba(127, 138, 138, 0.29);
+    }
+
+
+
+</style>
+
+
+</head>
+
+
+<body>
+    <h1>Gallery Title</h1>
+    <div class="conteiner">
+        
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+    </div>
+    
+
+
+
+</body>
+</html>
