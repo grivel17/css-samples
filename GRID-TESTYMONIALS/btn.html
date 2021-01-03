@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTN toggle</title>
+    <style>
+        #one {
+
+        }
+
+        #two {
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+
+        }
+
+        .hide{
+            display: none;
+        }
+
+        #btn-price {
+            color: azure;
+            background-color: #b4c5bb;
+            text-align: center;
+            border: 1px solid #b4c5bb;
+            padding: 20px 50px 20px 50px;
+            font-size: 1.5rem;
+        }
+
+        #btn-price:hover {
+            background-color: #a3b5aa;
+            border: 1px solid #a3b5aa;
+            padding: 22px 52px 22px 52px;
+        }
+        .test {
+           background-color: bisque;
+           width: fit-content;
+           padding: 50px;
+           margin-top: 100px;
+           margin-left: 100px;
+        }
+        h1{
+  text-align: center;
+  margin:50px;
+  font-weight: normal;
+  color:#726E97;
+}
+div {
+  width   : 200px;
+  height  : 50px;   
+  position: relative;
+  z-index : 1;
+  background-color: #f5f5f5;
+  margin: 20px auto;
+  padding: 20px;
+  color:#726E97;
+}
+
+div.top:before {
+  content : "";
+  position: absolute;
+  left    : 0;
+  top  : 0;
+  height  : 5px;
+  width   : 50%;
+  border-top:5px solid #726E97;
+}
+
+div.bottom:before {
+  content : "";
+  position: absolute;
+  left: 25%; 
+  bottom  : 0;
+  width   : 50%;
+  max-width: 0 auto;
+  border-bottom:5px dotted #726E97;
+}
+
+div.left:before {
+  content : "";
+  position: absolute;
+  left    : 0;
+  top     : 0;
+  height  : 50px;
+  width   : 50%;
+  border-left:5px solid #726E97;
+}
+
+div.right:before {
+  content : "";
+  position: absolute;
+  right    : 0;
+  top     : 0;
+  height  : 50px;
+  width   : 50%;
+  border-right:5px solid #726E97;
+}
+
+    </style>
+
+</head>
+<body>
+
+
+    <h1>Border length smaller than parent div<br> <small>with pseudo-elements</small></h1>
+    <div class="top"></div>
+    <div class="bottom"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+
+
+
+    <!-- <button id="one" type="button">DOWIEDZ SIĘ WIĘCEJ</button>
+
+    <div id="two" class="hide">
+        <div id="tree">Coś tam</div>
+    </div>
+     -->
+    <script>
+        var a, b, c; 
+        a = document.querySelector("#one");
+        b = document.querySelector("#two");
+        c = document.querySelector("#tree");
+
+        a.addEventListener("click", changeCont );
+        b.addEventListener("click", changeCont2 );
+
+        function changeCont(){
+            b.classList.remove("hide");
+            a.classList.add("hide");
+        };
+
+        function changeCont2() {
+            a.classList.remove("hide");
+            b.classList.add("hide");
+
+        } 
+
+    </script>
+
+</body>
+</html>

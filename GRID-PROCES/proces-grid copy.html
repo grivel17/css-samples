@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proces</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .grid-proc-cont{
+          box-sizing: border-box;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          justify-items: center;
+          max-width: 1200px;
+          margin: auto;    
+        }
+
+        .grid-proc-box {
+            position: relative;
+            width: 200px;
+        }
+        .grid-proc-box img {
+            width: 100%;
+        }
+
+        .grid-proc-box::after{
+            content: ' \2192';
+            position: absolute;
+            top: calc(100px);
+            left: calc(125% - 1rem);
+            line-height: 0;
+            font-size: 2rem;
+            color: #b4c5bb;
+
+        }
+        .grid-proc-box:last-child::after {
+            display: none;
+        }
+
+        .grid-proc-box-title{
+            text-transform: uppercase;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .grid-proc-box-text{
+            text-align: center;
+            padding-bottom: 15px;
+            
+        }
+
+        .hide {
+            display: none;
+           
+        }
+
+
+        @media only screen and (max-width: 1000px) {
+            .grid-proc-cont{
+                
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                justify-items: center;
+                }
+
+            .grid-proc-box {
+                width: 180px;
+                }
+            
+            .grid-proc-box::after{
+                top: calc(80px);
+                left: calc(120% - 1rem);
+                line-height: 0;
+                font-size: 1.5rem;
+                
+
+                }
+
+            }
+
+
+        @media only screen and (max-width: 800px){
+
+            .grid-proc-cont{
+                
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                justify-items: center;
+                }
+            .grid-proc-box {
+                width: 200px;
+                }
+            
+            .grid-proc-box::after{
+
+                display: none;
+                
+                }
+
+
+        }
+
+
+</style>
+
+<body>
+
+<div class="grid-proc-cont">
+
+    <div id="a" class="grid-proc-box"><img src="http://ins.stronazen.pl/jb/wp-content/uploads/2020/12/proces-item-1-min.jpg"><div class="grid-proc-box-title">poznajmy się</div><div id="ah" class="grid-proc-box-text hide">Ty przedstawiasz swoje oczekiwania, preferencje i inspiracje. Ja uważnie słucham, analizuję Twoje potrzeby oraz dokonuję pomiarów wnętrza.</div></div>
+
+    <div id="b" class="grid-proc-box"><img src="http://ins.stronazen.pl/jb/wp-content/uploads/2020/12/process-item-2-min.jpg"><div class="grid-proc-box-title">UKŁAD FUNKCJONALNY</div><div id="bh" class="grid-proc-box-text hide">Przedstawiam wizję Twojego wymarzonego wnętrza w formie moodboardu oraz prezentuję trzy propozycje układu funkcjonalnego – na rzucie 2D i szkicu 3D, żebyś mógł łatwiej dokonać wyboru.</div></div>
+
+    <div id="c" class="grid-proc-box"><img src="http://ins.stronazen.pl/jb/wp-content/uploads/2020/12/process-item-3-min.jpg"><div class="grid-proc-box-title">KONCEPCJA WNĘTRZA</div><div id="ch" class="grid-proc-box-text hide">Przygotowuję wizualizację wnętrza 3D, które pomogą Ci wyobrazić sobie, czy dobrze czujesz się z wybranymi materiałami, meblami i kolorami.</div></div>
+
+    <div id="d" class="grid-proc-box"><img src="http://ins.stronazen.pl/jb/wp-content/uploads/2020/12/process-item-4-min.jpg"><div class="grid-proc-box-title">DOKUMENTACJA TECHNICZNA</div><div id="dh" class="grid-proc-box-text hide">Opracowuję rysunki techniczne, kosztorysy, które ułatwią ekipie staranne wykończenie, a Tobie szybkie i bezstresowe zakupy. Prowadzę także nadzór inwestorski.</div></div>
+
+</div>
+
+
+
+
+
+
+
+    <script>
+
+        var a, b, c, d;
+
+        p1 = document.getElementById("a");
+        p2 = document.getElementById("b");
+        p3 = document.getElementById("c");
+        p4 = document.getElementById("d");
+
+        p1.addEventListener("mouseover", myF);
+        p1.addEventListener("mouseout", myF2);
+
+        p2.addEventListener("mouseover", myF);
+        p2.addEventListener("mouseout", myF2)
+
+        p3.addEventListener("mouseover", myF);
+        p3.addEventListener("mouseout", myF2)
+
+        p4.addEventListener("mouseover", myF);
+        p4.addEventListener("mouseout", myF2)
+        
+
+
+        function myF(){
+            var z = this.id + "h";
+            document.getElementById(z).classList.remove("hide");
+        };
+
+        function myF2(){
+            
+            var z = this.id + "h";
+            document.getElementById(z).classList.add("hide");
+        };
+
+
+
+
+
+
+    </script>
+    
+    </body>
+
+
+
+</html>
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/Events -->

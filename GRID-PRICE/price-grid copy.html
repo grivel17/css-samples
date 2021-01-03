@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price grid </title>
+
+<style>
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .grid-cont{
+        max-width: 1400px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 50px;
+        margin: auto;
+        padding: 50px;
+        box-sizing: border-box;
+     
+    }
+    .grid-price-box {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #a4aab3;
+    }
+
+    .grid-price-box-title {
+        text-align: center;
+        padding: 30px;
+        background-color: #b4c5bb; 
+        color: whitesmoke;
+        text-transform: uppercase;
+    }
+    .grid-price-box-text {
+        padding: 50px;
+        flex-grow: 1;
+    }
+
+    .grid-price-box-money {
+        text-align: left;
+        padding: 30px;
+        background-color: #b4c5bb; 
+        color: whitesmoke;
+    }
+    .grid-price-box-btn {
+       text-align: center;
+       padding: 20px;
+    }
+
+    .grid-price-box-btn button {
+        background-color: white;
+        border: 1px solid #b4c5bb;
+        padding: 10px;
+        color: #b4c5bb;
+    }
+
+    .grid-price-box-btn button:hover {
+        background-color: #b4c5bb;
+        border: 1px solid #b4c5bb;
+        padding: 10px;
+        color: whitesmoke;
+
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .grid-cont{
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+
+    @media only screen and (max-width: 800px) {
+        .grid-cont{
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 25px;
+            padding: 25px;
+            }
+        }
+</style>
+
+
+</head>
+<body>
+
+        
+        <div class="grid-cont">
+
+            <div class="grid-price-box"> 
+                <div class="grid-price-box-title">PROJEKT PODSTAWOWY</div>
+                <div class="grid-price-box-text">Kiedy potrzebujesz wsparcia w podstawowym zakresie lub chcesz dokonać zmian deweloperskich
+                    <br>
+                    <br>
+                    <p>Co zawiera pakiet:</p>
+                    <ul>
+                        <li>badanie potrzeb Inwestora i ew. pomiary</li>
+                        <li>moodboard (propozycja stylu i kolorystyki)</li>
+                        <li>układ funkcjonalny (rzuty 2D): 2 wersje do wyboru</li>
+                    </ul>
+
+                </div>
+                <div class="grid-price-box-money"> 
+                    <ul>
+                        <li>81-300 m2 – 50 zł/1m2</li>
+                        <li>51-80 m2 – 60 zł/1m2</li>
+                        <li>31-50 m2 – 70 zł/1m2 </li>
+                        <li>1-30m2 – wycena indywidualna</li>
+                    </ul>
+
+                </div>
+                <div class="grid-price-box-btn"><button type="button">ZAMAWIAM</button></div>        
+            </div>
+
+            <div class="grid-price-box"> 
+                <div class="grid-price-box-title">PROJEKT KOMPLEKSOWY</div>
+                <div class="grid-price-box-text">
+                    Gdy potrzebojesz projektu w pełnej wersji, z kosztorysem i dokumentacją dla wykonawców
+                <br>
+                <br>
+                <p>Co zawiera pakiet:</p>
+                    <ul>
+                        <li>badanie potrzeb Inwestora i ew. pomiary</li>
+                        <li>moodboard (propozycja stylu i kolorystyki): 2-3 wersje do wyboru</li>
+                        <li>układ funkcjonalny (rzuty 2D): 2-3 wersje do wyboru</li>
+                        <li>wizualizacje 3D</li>
+                        <li>dokumentacja techniczna: rzuty ścian, projekt mebli na wymiar, projekt podłóg, okładzin ściennych, sufitów podwieszanych, projekt instalacji: elektryki i oświetlenia, hydrauliki i c.o.</li>
+                        <li>kosztorys - spis materiałów wykończeniowych użytych w projekcie wraz z ceną i ilością</li>
+                        <li>nielimitowane konsultacje</li>
+                    </ul>
+                </div>
+                <div class="grid-price-box-money">
+                    <ul>
+                        <li>81-300 m2 – 110 zł/1m2</li>
+                        <li>51-80 m2 – 120 zł/1m2</li>
+                        <li>31-50 m2 – 130 zł/1m2 </li>
+                        <li>1-30m2 – wycena indywidualna</li>
+                    </ul>
+
+                </div>
+                <div class="grid-price-box-btn"><button type="button">ZAMAWIAM</button></div>
+                
+            </div>
+
+            <div class="grid-price-box"> 
+                <div class="grid-price-box-title">PROJEKT WYKONAWCZY</div>
+                <div class="grid-price-box-text">
+                    Kiedy potrzebujesz projektu w pełnej wersji oraz nadzoru nad pracami wykończeniowymi
+                    <br>
+                    <br>
+                    <p>Co zawiera pakiet:</p>
+                    <ul>
+                        <li>badanie potrzeb Inwestora i ew. pomiary</li>
+                        <li>moodboard (propozycja stylu i kolorystyki): 2-3 wersje do wyboru</li>
+                        <li>układ funkcjonalny (rzuty 2D): 2-3 wersje do wyboru</li>
+                        <li>wizualizacje 3D</li>
+                        <li>dokumentacja techniczna: projekt mebli na wymiar, projekt podłóg, okładzin ściennych, sufitów podwieszanych, projekt instalacji: elektryki i oświetlenia, hydrauliki i c.o.</li>
+                        <li>kosztorys - spis materiałów wykończeniowych użytych w projekcie wraz z ceną i ilością</li>
+                        <li>nielimitowane konsultacje</li>
+                        <li>nadzór nad pracami wykończeniowymi</li>
+                    </ul>
+                </div>
+                <div class="grid-price-box-money">
+                    <ul>
+                        <li>81-300 m2 – 210 zł/1m2</li>
+                        <li>51-80 m2 – 220 zł/1m2</li>
+                        <li>31-50 m2 – 230 zł/1m2</li>
+                        <li>1-30m2 – wycena indywidualna</li>
+                    </ul>
+                </div>
+                <div class="grid-price-box-btn"><button type="button">ZAMAWIAM</button></div>
+                
+            </div>
+            
+        </div> 
+  
+
+
+
+
+</body>
+</html>

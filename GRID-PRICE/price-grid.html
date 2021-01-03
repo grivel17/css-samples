@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price grid </title>
+
+<style>
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .grid-cont{
+        max-width: 1400px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 50px;
+        margin: auto;
+        padding: 50px;
+     
+    }
+    .grid-price-box {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #a4aab3;
+    }
+
+    .grid-price-box-title {
+        text-align: center;
+        padding: 30px;
+        background-color: #b4c5bb; 
+        color: whitesmoke;
+        text-transform: uppercase;
+    }
+    .grid-price-box-text {
+        padding: 50px;
+        flex-grow: 1;
+    }
+
+    .grid-price-box-money {
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        text-align: center;
+        padding: 30px;
+        background-color: #b4c5bb; 
+        color: whitesmoke;
+    }
+    .grid-price-box-btn {
+       text-align: center;
+       padding: 20px;
+    }
+
+    .grid-price-box-btn button {
+        background-color: white;
+        border: 1px solid #b4c5bb;
+        padding: 10px;
+        color: #b4c5bb;
+    }
+
+    .grid-price-box-btn button:hover {
+        background-color: #b4c5bb;
+        border: 1px solid #b4c5bb;
+        padding: 10px;
+        color: whitesmoke;
+
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .grid-cont{
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+
+    @media only screen and (max-width: 800px) {
+        .grid-cont{
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 25px;
+            padding: 25px;
+            }
+        }
+</style>
+
+
+</head>
+<body>
+
+        
+        <div class="grid-cont">
+
+            <div class="grid-price-box"> 
+                <div class="grid-price-box-title">TITLE</div>
+                <div class="grid-price-box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut malesuada est, ac molestie enim. Etiam consequat, nisl vitae commodo laoreet, eros ligula dignissim sapien, id luctus enim mauris non eros. Sed viverra luctus lacinia. In quis tortor odio. Duis at turpis et elit euismod rhoncus. Suspendisse potenti. Sed egestas leo vel felis malesuada interdum. Nulla aliquam ex massa, non consectetur urna sollicitudin et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+                <div class="grid-price-box-money">Cena cena cena cena </div>
+                <div class="grid-price-box-btn"><button type="button">BTN</button></div>        
+            </div>
+
+            <div class="grid-price-box"> 
+                <div class="grid-price-box-title">TITLE</div>
+                <div class="grid-price-box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut malesuada est, ac molestie enim. Etiam consequat, nisl vitae commodo laoreet, eros ligula dignissim sapien, id luctus enim mauris non eros. Sed viverra luctus lacinia. In quis tortor odio. Duis at turpis et elit euismod rhoncus. Suspendisse potenti. Sed egestas leo vel felis malesuada interdum. Nulla aliquam ex massa, non consectetur urna sollicitudin et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut malesuada est, ac molestie enim. Etiam consequat, nisl vitae commodo laoreet, eros ligula dignissim sapien, id luctus enim mauris non eros. Sed viverra luctus lacinia. In quis tortor odio. Duis at turpis et elit euismod rhoncus. Suspendisse potenti. Sed egestas leo vel felis malesuada interdum. Nulla aliquam ex massa, non consectetur urna sollicitudin et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+                <div class="grid-price-box-money">Cena cena cena cena </div>
+                <div class="grid-price-box-btn"><button type="button">BTN</button></div>
+                
+            </div>
+
+            <div class="grid-price-box"> 
+                <div class="grid-price-box-title">TITLE</div>
+                <div class="grid-price-box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut malesuada est, ac molestie enim. Etiam consequat, nisl vitae commodo laoreet, eros ligula dignissim sapien, id luctus enim mauris non eros. Sed viverra luctus lacinia. In quis tortor odio. Duis at turpis et elit euismod rhoncus. Suspendisse potenti. Sed egestas leo vel felis malesuada interdum. Nulla aliquam ex massa, non consectetur urna sollicitudin et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+                <div class="grid-price-box-money">Cena cena cena cena </div>
+                <div class="grid-price-box-btn"><button type="button">BTN</button></div>
+                
+            </div>
+            
+        </div> 
+  
+
+
+
+
+</body>
+</html>
